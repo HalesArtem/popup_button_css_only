@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Popup</title>
+</head>
+<body>
+	<!-- todo id="header" нужен для закрытия попапа чтоб при закрытии все не поднималась вверх-->
+	<header id="header" class="header"></header>
+	<div class="content">
+		<a href="#popup" class="popup1">button_popup</a>
+	</div>
+	<footer class="footer"></footer>
+	<div id="popup"class="popup">
+		<!-- todo нужно для того чтоб закрывать попап нажатием на черный екран -->
+		<a href="#header" class="popup__area"></a>
+		<div class="popup__body">
+			<!-- todo и создаем контент попапа -->
+			<div class="popup__content">
+				<!-- todo ссылка для закрытия попапа -->
+				<a href="#header" class="popup__close">X</a>
+				<!-- todo для закрытия попапа -->
+				<div class="popup__title">
+					<!-- todo заголовок с номером для понимания где какой попап -->
+					mod window #1
+				</div>
+				<div class="popup__text">
+					<!-- todo текст попапа -->
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+					Beatae, magnam? Possimus iste, numquam provident dolorem 
+					facilis eius accusamus obcaecati nemo.
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="/js/script.js"></script>
+</body>
+</html>
